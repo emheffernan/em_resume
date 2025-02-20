@@ -399,7 +399,7 @@
 \newcommand{\acvHeaderAfterQuoteSkip}{5mm}
 
 % Others
-\newcommand{\acvSectionTopSkip}{3mm}
+\newcommand{\acvSectionTopSkip}{1mm}
 \newcommand{\acvSectionContentTopSkip}{2.5mm}
 
 
@@ -587,7 +587,7 @@
 	\vspace{\acvSectionTopSkip}
 	\sectionstyle{#1}
 	\phantomsection
-	\color{gray}\vhrulefill{0.9pt}
+	\color{gray}\vhrulefill{0.5pt}
 }
 
 % Define a subsection for CV

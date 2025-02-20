@@ -27,7 +27,9 @@ library(fontawesome)
 
 Insatiably curious electrical engineer turned cognitive neuroscientist with a passion for uncovering insights from complex data. With 5+ years of experience in experimentation, computational modelling, and statistical inference, I specialize in translating scientific concepts and results into clear, engaging narratives.
  
+ 
 # Skills
+
 \definecolor{mygrey}{RGB}{65, 65, 65}
  
  \textbf{\textcolor{mygrey}{Programming:}} R, Python, MATLAB, Excel, BASH, Git, Javascript, Jupyter, SQL, TensorFlow, JAX, HTML
@@ -36,6 +38,7 @@ Insatiably curious electrical engineer turned cognitive neuroscientist with a pa
  
  \textbf{\textcolor{mygrey}{Other Tools:}} Prolific, Qualtrics, Microsoft Office, RStudio
 
+
 # Education
 
 ```{r}
@@ -43,7 +46,7 @@ library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where, ~ Why,
   "University of Toronto", "2020-2024", "PhD, Cognitive Neuroscience", "Toronto, Ontario", "\\textbf{\\textcolor{mygrey}{Dissertation:}} \\underline{\\href{https://utoronto.scholaris.ca/items/8e624d4c-ebe8-460b-b7b4-444c31a18d2a}{What the...?! Transient Behavioural, Representational, and Attentional Shifts in the Face of Surprising Information}}",
-  "University of Toronto", "2020-2024", "PhD, Computational Neuroscience", "Toronto, Ontario", "\\textbf{\\textcolor{mygrey}{Funding:}} NSERC CGS-D (105,000 CAD)",
+  "University of Toronto", "2020-2024", "PhD, Cognitive Neuroscience", "Toronto, Ontario", "\\textbf{\\textcolor{mygrey}{Funding:}} NSERC CGS-D (105,000 CAD)",
   "University of Toronto", "2019-2020", "MA, Experimental Psychology", "Toronto, Ontario", "\\textbf{\\textcolor{mygrey}{Thesis:}} \\underline{\\href{https://utoronto.scholaris.ca/items/c94d45ea-0ffa-4141-abd1-e56c1005bdf0}{The Impact of Learning Sequence on Performance in a Rule-Plus-Exceptions Categorization Task}}",
   "University of Toronto", "2019-2020", "MA, Experimental Psychology", "Toronto, Ontario", "\\textbf{\\textcolor{mygrey}{Funding:}} NSERC CGS-M (17,500 CAD), Ontario Graduate Scholarship (15,000 CAD; Declined)",
   "Queen's University", "2013-2018", "BASc, Electrical Engineering", "Kingston, Ontario", "\\textbf{\\textcolor{mygrey}{Capstone Project:}} Robotics Based Medical Simulator",
