@@ -1,0 +1,113 @@
+---
+name: Em
+docname: Resume
+surname: Heffernan
+position: "Postdoctoral Fellow"
+address: "University of Toronto"
+phone: (705) 434 8655
+# www: emilysnewwebsite.com
+email: "e.maeve.heffernan@gmail.com"
+github: emheffernan
+linkedin: emheffernan
+date: "`r format(Sys.time(), '%B %Y')`"
+output:
+  vitae::awesomecv:
+    page_total: true
+    extra_dependencies: ["fontawesome"]
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(fontawesome)
+```
+
+# Summary
+
+Insatiably curious electrical engineer turned cognitive neuroscientist with a passion for uncovering insights from complex data. With 5+ years of experience in experimentation, computational modelling, and statistical inference, I specialize in translating scientific concepts and results into clear, engaging narratives.
+ 
+# Skills
+\definecolor{mygrey}{RGB}{65, 65, 65}
+ 
+ \textbf{\textcolor{mygrey}{Programming:}} R, Python, MATLAB, Excel, BASH, Git, Javascript, Jupyter, SQL, TensorFlow, JAX, HTML
+ 
+ \textbf{\textcolor{mygrey}{Research Methods:}} Experiment design, parametric and nonparametric statistics, A/B testing, regression
+ 
+ \textbf{\textcolor{mygrey}{Other Tools:}} Prolific, Qualtrics, Microsoft Office, RStudio
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where, ~ Why,
+  "University of Toronto", "2020-2024", "PhD, Cognitive Neuroscience", "Toronto, Ontario", "\\textbf{\\textcolor{mygrey}{Dissertation:}} \\underline{\\href{https://utoronto.scholaris.ca/items/8e624d4c-ebe8-460b-b7b4-444c31a18d2a}{What the...?! Transient Behavioural, Representational, and Attentional Shifts in the Face of Surprising Information}}",
+  "University of Toronto", "2020-2024", "PhD, Computational Neuroscience", "Toronto, Ontario", "\\textbf{\\textcolor{mygrey}{Funding:}} NSERC CGS-D (105,000 CAD)",
+  "University of Toronto", "2019-2020", "MA, Experimental Psychology", "Toronto, Ontario", "\\textbf{\\textcolor{mygrey}{Thesis:}} \\underline{\\href{https://utoronto.scholaris.ca/items/c94d45ea-0ffa-4141-abd1-e56c1005bdf0}{The Impact of Learning Sequence on Performance in a Rule-Plus-Exceptions Categorization Task}}",
+  "University of Toronto", "2019-2020", "MA, Experimental Psychology", "Toronto, Ontario", "\\textbf{\\textcolor{mygrey}{Funding:}} NSERC CGS-M (17,500 CAD), Ontario Graduate Scholarship (15,000 CAD; Declined)",
+  "Queen's University", "2013-2018", "BASc, Electrical Engineering", "Kingston, Ontario", "\\textbf{\\textcolor{mygrey}{Capstone Project:}} Robotics Based Medical Simulator",
+  "Queen's University", "2013-2018", "BASc, Electrical Engineering", "Kingston, Ontario", "\\textbf{\\textcolor{mygrey}{Funding:}} Chernoff Family Scholarship (60,000 CAD), Hydro One Women in Engineering Scholarship (5,000 CAD), Google Lime Connect Scholarship (5,000 USD), NSERC Undergraduate Student Research Award (4,500 CAD)"
+) %>%
+  detailed_entries(Degree, Year, Institution, Where, Why, .protect = FALSE)
+```
+
+
+# Work Experience
+```{r}
+tribble(
+    ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
+ "Postdoctoral Fellow", "APPLY Group, University of Toronto", "September", 2024, "Present", NA, "Mississauga, Ontario", "My current research explores how digital font design impacts a reader's ability to detect typos.",
+ "Postdoctoral Fellow", "APPLY Group, University of Toronto", "September", 2024, "Present", NA, "Mississauga, Ontario", "In my first 3 months in this role, I conducted a literature review, developed an experiment in PsychToolbox (MATLAB), collected and analyzed pilot data in R, and prepared and submitted an abstract that was accepted for presentation at the Vision Sciences Society's 2025 meeting.",
+ "Postdoctoral Fellow", "APPLY Group, University of Toronto", "September", 2024, "Present", NA, "Mississauga, Ontario", "I am using eye-tracking and drift-diffusion modelling to evaluate individual differences in search patterns change for easy- vs. hard-to-read fonts.",
+ 
+  "PhD Researcher", "Mack Lab, University of Toronto", "September", 2019, "August", 2024, "Toronto, Ontario", "I designed experiments and collected, analyzed, and visualized data from hundreds of participants using R, Python, and MATLAB to explore how surprising information influences learning and attention (7 peer-reviewed publications and over 50 citations).",
+ "PhD Researcher", "Mack Lab, University of Toronto", "September", 2019, "August", 2024, "Toronto, Ontario", "I worked with behavioural and MRI data, neural networks, and statistical models (e.g., linear and logistic regression, mixed-effects models, generalized additive models) to evaluate human category learning and test predictions about hippocampal involvement.",
+ "PhD Researcher", "Mack Lab, University of Toronto", "September", 2019, "August", 2024, "Toronto, Ontario", "I supervised and mentored, on average, three undergraduate students each year; these students assisted with my own research and conducted independent projects under my guidance.",
+ 
+ "Copy Editor and Content Writer", "Learneo", "January", 2019, "Present", NA, "Remote", "As a copyeditor for Scribbr (2019--2024), my keen attention to detail helped me edit over 250 academic works (and over 1 million words!), with \\underline{\\href{https://www.linkedin.com/posts/scribbr_scribbr-dissertation-proofreading-activity-6848974232278376448-Bqj7?utm_source=share&utm_medium=member_desktop&rcm=ACoAABTW-2sBixIXXERsQYwtkxQ-3toe_WFiNZI}{highly positive reviews}} from global clients.",
+ "Copy Editor and Content Writer", "Learneo", "January", 2019, "Present", NA, "Remote", "As a content writer at QuillBot (2024--Pres.), I conduct SEO analysis and write research methods articles to inform and engage target audiences.",
+ "Copy Editor and Content Writer", "Learneo", "January", 2019, "Present", NA, "Remote", "\\underline{\\href{https://quillbot.com/blog/author/emily/}{My articles}} consistently achieve high rankings on Google and provide high click-through rates to internal pages.",
+ 
+ "Teaching Assistant", "University of Toronto", "August", 2024, "Present", NA, "Remote", "I TAed courses in statistics, cognitive science, and research methods, developing and leading tutorials both in-person and online to make complex concepts accessible.",
+ "Teaching Assistant", "University of Toronto", "August", 2024, "Present", NA, "Remote", "I evaluated and provided feedback on hundreds of student assignments and exams, focusing on clarity, critical thinking, and methodological rigor.",
+ 
+ "Junior Account Executive", "Microsoft", "June", 2018, "April", 2019, "Mississauga, ON", "I advised law firm clients on Microsoft solutions, presenting on Azure and other products to address their business needs.",
+ "Junior Account Executive", "Microsoft", "June", 2018, "April", 2019, "Mississauga, ON", "I collaborated with a sales team to develop strategies for meeting quarterly targets, gaining insight into enterprise sales processes."
+    
+) %>%
+    detailed_entries(
+    with = title,
+    what = unit,
+    why = detail,
+    when = glue::glue("{startMonth} {startYear}--{endMonth} {endYear}",.na = ""),
+    where = where,
+    .protect = FALSE
+  )
+```
+
+# Projects
+```{r}
+tribble(
+    ~title, ~unit, ~detail,
+ 
+ "Learning exceptions to the rule in human and model \\href{www.google.com}{\\faGithub}", "Mack Lab", "\\textbf{\\textcolor{mygrey}{Objective:}} To better understand how people learn exceptions to the rule (e.g., bats fly, but aren't birds) and whether a neural network model of the hippocampus captures human behaviour.",
+  "Learning exceptions to the rule in human and model \\href{www.google.com}{\\faGithub}", "Mack Lab", "\\textbf{\\textcolor{mygrey}{What I Did:}} I developed a behavioural task using Psychopy (Python), collected data, and analyzed performance in R using mixed-effects logistic regression. I also simulated my task with a neural network and explored activation in its hidden layers using representational similarity analysis.",
+ "Learning exceptions to the rule in human and model \\href{www.google.com}{\\faGithub}", "Mack Lab", "\\textbf{\\textcolor{mygrey}{Outcomes:}} Human and model performed better when exceptions were introduced after rule-followers. This work, published in Scientific Reports (19 citations) earned me the Computational Modelling Award in Higher Level Cognition at the 2021 Cognitive Science Society meeting.",
+ 
+ "Using mouse-tracking to explore attentional shifts during learning \\href{www.google.com}{\\faGithub}", "Mack Lab", "\\textbf{\\textcolor{mygrey}{Objective:}} To explore whether surprising information shifts a learner's attention and if this shift supports subsequent learning.",
+ "Using mouse-tracking to explore attentional shifts during learning \\href{www.google.com}{\\faGithub}", "Mack Lab", "\\textbf{\\textcolor{mygrey}{What I Did:}} I designed a mouse-tracking task in JavaScript. Participants explored stimuli using their computer mouse and sorted them into categories. In R, I analyzed the entropy of mouse movements.",
+ "Using mouse-tracking to explore attentional shifts during learning \\href{www.google.com}{\\faGithub}", "Mack Lab", "\\textbf{\\textcolor{mygrey}{Outcomes:}} Surprising information does elicit a shift in attention, but this shift only benefits learning if the surprising item is similar to previously encountered items. I presented a talk on this work at the 2023 CSBBCS Conference and am currently preparing a manuscript for publication.",
+ 
+ "Comparing Diffusion MRI Preprocessing Pipelines \\href{www.google.com}{\\faGithub}", "Budding Minds Lab", "\\textbf{\\textcolor{mygrey}{Objective:}} To assess how well two open-access diffusion MRI (dMRI) preprocessing pipelines eliminate motion in dMRI data.",
+ "Comparing Diffusion MRI Preprocessing Pipelines \\href{www.google.com}{\\faGithub}", "Budding Minds Lab", "\\textbf{\\textcolor{mygrey}{What I Did:}} I used SQL to query open-access pediatric dMRI datasets, then preprocessed data with two separate pipelines on a high-performance computing cluster. After controlling for confounds using generalized additive modelling in R, I evaluated residual motion artifacts.",
+ "Comparing Diffusion MRI Preprocessing Pipelines \\href{www.google.com}{\\faGithub}", "Budding Minds Lab", "\\textbf{\\textcolor{mygrey}{Outcomes:}} Both pipelines performed similarly, suggesting flexibility in preprocessing choices for pediatric MRI data. However, motion artifacts remained, emphasizing the importance of quantifying and reporting motion in dMRI studies.",
+    
+) %>%
+    detailed_entries(
+    with = title,
+    why = detail,
+    what = unit,
+    .protect = FALSE
+  )
+```
